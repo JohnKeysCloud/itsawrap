@@ -1,0 +1,273 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: "911porschav4laser";
+    src: url(../fonts/911porschav3laser.ttf);
+}
+
+@font-face {
+    font-family: "BMBItalic";
+    src: url(fonts/BookmanBoldItalic.otf);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    font-size: 62.5%;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    align-items: center;
+    background-color: rgb(10, 27, 10);
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 16px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.headleft a{
+    color: wheat;
+    text-decoration: none;
+}
+
+.headleft h1 {
+    font-size: 3rem;
+    color: wheat;
+    font-family: 'BMBItalic' ;
+    margin: 0;
+    padding: 0;
+    transition: color 0.5s ease-in-out;
+}
+
+.headleft h1:hover {
+    color: #6b6c6e;
+}
+
+.headright a {
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+.headright a:hover {
+    color: #6b6c6e;
+}
+
+.headright ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+}
+
+.subheader {
+    background-color: rgb(10, 27, 10);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0px 100px;
+    padding-bottom: 84px;
+}
+
+.subleft h2 {
+    color: wheat;
+    font-weight: bold;
+    font-size: 32px;
+    margin:0;
+}
+
+.subleft p {
+    color: wheat;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.subleft a {
+    background-color: red;
+    border-radius: 5px;
+    color: #e5e7eb;
+    display: inline-block;
+    font-weight: 900;
+    margin:0;
+    padding: 8px 24px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.subleft a:active,
+.cta a:active {
+    transform: translate(0px,3px);
+}
+
+.subleft a:hover {
+    background-color: #184ea5;
+    box-shadow: 4px 6px 12px #585858;
+}
+.subright {
+    position: relative;
+}
+
+.subright img {
+    height: 300px;
+    border-radius: 50%;
+    outline: 3px ridge khaki;
+    outline-offset: 10px;
+    transition: 2s all ease-in;
+}
+.subright img:hover {
+    transform: scale(1.8);
+}
+
+#name {
+    color: wheat;
+    font-size: 1rem;
+
+    position: absolute;
+    top: 320px;
+    left: 55px;
+}
+
+.randominfo {
+    align-items: center;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px 50px 200px;
+
+}
+
+.randominfo h2 {
+    color: rgb(10, 27, 10);
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 1.8rem;
+    text-shadow: 0 0 11px rgb(10, 27, 10);
+}
+
+.flexcards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 144px;
+    text-align: center;
+}
+
+.card img {
+    border: 3px solid rgb(10, 27, 10);
+    border-radius: 12px;
+    height: 144px;
+    width: 144px;
+}
+
+.card p {
+    color: rgb(10, 27, 10);
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0;
+    margin-top: 8px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgb(10, 27, 10);
+}
+
+blockquote p {
+    color: wheat;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 75px;
+}
+
+figcaption {
+    display: flex;
+    font-size: 18px;
+    font-weight: 900;
+    justify-content: flex-end; 
+    margin-right: 200px;
+    padding-bottom: 75px;
+}
+
+.boxception {
+    padding: 100px;
+    background-color: rgb(56, 29, 10);
+}
+
+.cta {
+    align-items: center;
+    background-color: wheat;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.cta h3 {
+    color: rgb(10, 27, 10);
+    margin: 0;
+}
+
+.cta p {
+    color: rgb(10, 27, 10);
+    margin: 0;
+}
+
+.cta a {
+    background-color: rgb(10, 27, 10);
+    border: 2px solid #f9faf8;
+    border-radius: 5px;
+    color: #e5e7eb;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 900;
+    margin:0;
+    padding: 8px 24px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.cta a:hover {
+    color: #3882f6;
+    background-color: #f9faf8;
+    box-shadow: 4px 6px 12px #585858;
+}
+
+footer {
+    background-color: rgb(10, 27, 10);
+    color: #E5E7EB;
+    font-size: 14px;
+    padding: 12px;
+    text-align: center;
+}
